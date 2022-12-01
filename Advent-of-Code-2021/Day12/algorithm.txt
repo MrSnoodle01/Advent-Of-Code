@@ -1,0 +1,20 @@
+Algorithm:
+
+check to see if next is = "end"
+	check to see if current path is in total paths vector
+		if not then add the currentPath string to the totalPaths string vector
+	reset current Path
+    reset already visited vector
+	return
+
+if first = tolower(first)
+    if first = visited vector
+        return
+
+visited vector.pushback(first)
+
+for each element in tunnelsVector
+    if next = first 
+        this is truely a recursion moment
+
+return
