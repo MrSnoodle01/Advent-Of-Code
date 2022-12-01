@@ -10,36 +10,30 @@ int main(){
 
     std::string line;
     int temp = 0;
-    if(myfile.is_open()){
-        while(std::getline(myfile, line)){
-            if(line.size() < 2){
-                inputs.push_back(temp);
-                temp = 0;
-            }else{
-                temp += std::stoi(line);
-            }
+     while(std::getline(myfile, line)){
+        if(line.size() == 1){
+            inputs.push_back(temp);
+            temp = 0;
+        }else{
+            temp += std::stoi(line);
         }
-        inputs.push_back(temp);
-        myfile.close();
     }
+    inputs.push_back(temp);
 
     temp = 0;
-    int temp2 = 0;
-    int final = 0;
+    int iterator = 0, final = 0;
     for(int j = 0; j < 3; j++){
         temp = 0;
-        temp2 = 0;
         for(int i = 0; i < inputs.size(); i++){
             if(inputs[i] > temp){
                 temp = inputs[i];
-                temp2 = i;
+                iterator = i;
             }
         } 
         final += temp;
-        inputs[temp2] = 0;
+        inputs[iterator] = 0;
     }
     
-
     std::cout << final << std::endl;
 
     return 0;
