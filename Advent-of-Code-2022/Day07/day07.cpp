@@ -218,8 +218,6 @@ void part2(){
     //get unused space
     int unUsedSpace = 70000000 - directories[0].size;
 
-    std::cout << "used: " << usedSpace << ", unused: " << unUsedSpace << std::endl;
-
     int best = 70000000;
     for(int i = 0; i < directories.size(); i++){
         if(directories[i].size < unUsedSpace && directories[i].size >= 30000000 - unUsedSpace){
