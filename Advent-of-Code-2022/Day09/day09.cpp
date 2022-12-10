@@ -27,8 +27,6 @@ class ends{
 ends head, tail;
 std::vector<ends> tens;
 
-void part1();
-void part2();
 bool checkHead();
 bool checkClose(ends, ends);
 void move(ends&, ends&);
