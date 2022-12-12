@@ -17,10 +17,6 @@ class monkey{
 
 std::vector<monkey> monkeys;
 
-std::string add(std::string, std::string);
-std::string multiply(std::string, std::string);
-std::string divide(std::string, int);
-int mod(std::string, int);
 void part1();
 void part2();
 
