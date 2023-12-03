@@ -11,8 +11,6 @@ void part1(std::vector<std::string> input){
     bool isAdjacent = false;
     int final = 0;
     std::string digit = "";
-    int x[5]={0,0,0,1,-1};
-	int y[5]={0,1,-1,0,0};
     
     for(int i = 0; i < input.size(); i++){
         isAdjacent = false;
@@ -48,22 +46,10 @@ void part1(std::vector<std::string> input){
 void part2(std::vector<std::string> input){
     // unique key as the concatinated coords, with array of potential nums
     std::unordered_map<int, std::vector<int>> gearCoords;
-    std::string coords = "";
+    std::string coords = "", digit = "";
     bool isAdjacent = false;
     int final = 0;
-    std::string digit = "";
-    std::vector<std::vector<int>> map;
-    for(int i = 0; i < input.size(); i++){
-        std::vector<int> temp;
-        map.push_back(temp);
-    }
 
-    for(int i = 0; i < input.size(); i++){
-        for(int j = 0; j < input[i].size(); j++){
-            map[i].push_back(0);
-        }
-    }
-    
     for(int i = 0; i < input.size(); i++){
         isAdjacent = false;
         digit = "";
