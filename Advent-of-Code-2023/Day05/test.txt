@@ -1,0 +1,1354 @@
+part 1 final : 324724204
+Lower: 79
+Upper: 92
+Lower: 55
+Upper: 67
+2
+J: 0
+lower: 79, upper: 92
+3
+J: 0
+lower: 55, upper: 67
+4
+J: 0
+lower: 79, upper: 97
+5
+J: 0
+lower: 98, upper: 99
+5
+J: 1
+lower: 55, upper: 97
+6
+J: 1
+lower: 98, upper: 99
+6
+J: 2
+lower: 79, upper: 97
+7
+J: 2
+lower: 98, upper: 99
+7
+J: 3
+lower: 55, upper: 97
+8
+J: 3
+lower: 98, upper: 99
+8
+J: 4
+lower: 79, upper: 97
+9
+J: 4
+lower: 98, upper: 99
+9
+J: 5
+lower: 55, upper: 97
+10
+J: 5
+lower: 98, upper: 99
+10
+J: 6
+lower: 79, upper: 97
+11
+J: 6
+lower: 98, upper: 99
+11
+J: 7
+lower: 55, upper: 97
+12
+J: 7
+lower: 98, upper: 99
+12
+J: 8
+lower: 79, upper: 97
+13
+J: 8
+lower: 98, upper: 99
+13
+J: 9
+lower: 55, upper: 97
+14
+J: 9
+lower: 98, upper: 99
+14
+J: 10
+lower: 79, upper: 97
+15
+J: 10
+lower: 98, upper: 99
+15
+J: 11
+lower: 55, upper: 97
+16
+J: 11
+lower: 98, upper: 99
+16
+J: 12
+lower: 79, upper: 97
+17
+J: 12
+lower: 98, upper: 99
+17
+J: 13
+lower: 55, upper: 97
+18
+J: 13
+lower: 98, upper: 99
+18
+J: 14
+lower: 79, upper: 97
+19
+J: 14
+lower: 98, upper: 99
+19
+J: 15
+lower: 55, upper: 97
+20
+J: 15
+lower: 98, upper: 99
+20
+J: 16
+lower: 79, upper: 97
+21
+J: 16
+lower: 98, upper: 99
+21
+J: 17
+lower: 55, upper: 97
+22
+J: 17
+lower: 98, upper: 99
+22
+J: 18
+lower: 79, upper: 97
+23
+J: 18
+lower: 98, upper: 99
+23
+J: 19
+lower: 55, upper: 97
+24
+J: 19
+lower: 98, upper: 99
+24
+J: 20
+lower: 79, upper: 97
+25
+J: 20
+lower: 98, upper: 99
+25
+J: 21
+lower: 55, upper: 97
+26
+J: 21
+lower: 98, upper: 99
+26
+J: 22
+lower: 79, upper: 97
+27
+J: 22
+lower: 98, upper: 99
+27
+J: 23
+lower: 55, upper: 97
+28
+J: 23
+lower: 98, upper: 99
+28
+J: 24
+lower: 79, upper: 97
+29
+J: 24
+lower: 98, upper: 99
+29
+J: 25
+lower: 55, upper: 97
+30
+J: 25
+lower: 98, upper: 99
+30
+J: 26
+lower: 79, upper: 97
+31
+J: 26
+lower: 98, upper: 99
+31
+J: 27
+lower: 55, upper: 97
+32
+J: 27
+lower: 98, upper: 99
+32
+J: 28
+lower: 79, upper: 97
+33
+J: 28
+lower: 98, upper: 99
+33
+J: 29
+lower: 55, upper: 97
+34
+J: 29
+lower: 98, upper: 99
+34
+J: 30
+lower: 79, upper: 97
+35
+J: 30
+lower: 98, upper: 99
+35
+J: 31
+lower: 55, upper: 97
+36
+J: 31
+lower: 98, upper: 99
+36
+J: 32
+lower: 79, upper: 97
+37
+J: 32
+lower: 98, upper: 99
+37
+J: 33
+lower: 55, upper: 97
+38
+J: 33
+lower: 98, upper: 99
+38
+J: 34
+lower: 79, upper: 97
+39
+J: 34
+lower: 98, upper: 99
+39
+J: 35
+lower: 55, upper: 97
+40
+J: 35
+lower: 98, upper: 99
+40
+J: 36
+lower: 79, upper: 97
+41
+J: 36
+lower: 98, upper: 99
+41
+J: 37
+lower: 55, upper: 97
+42
+J: 37
+lower: 98, upper: 99
+42
+J: 38
+lower: 79, upper: 97
+43
+J: 38
+lower: 98, upper: 99
+43
+J: 39
+lower: 55, upper: 97
+44
+J: 39
+lower: 98, upper: 99
+44
+J: 40
+lower: 79, upper: 97
+45
+J: 40
+lower: 98, upper: 99
+45
+J: 41
+lower: 55, upper: 97
+46
+J: 41
+lower: 98, upper: 99
+46
+J: 42
+lower: 79, upper: 97
+47
+J: 42
+lower: 98, upper: 99
+47
+J: 43
+lower: 55, upper: 97
+48
+J: 43
+lower: 98, upper: 99
+48
+J: 44
+lower: 79, upper: 97
+49
+J: 44
+lower: 98, upper: 99
+49
+J: 45
+lower: 55, upper: 97
+50
+J: 45
+lower: 98, upper: 99
+50
+J: 46
+lower: 79, upper: 97
+51
+J: 46
+lower: 98, upper: 99
+51
+J: 47
+lower: 55, upper: 97
+52
+J: 47
+lower: 98, upper: 99
+52
+J: 48
+lower: 79, upper: 97
+53
+J: 48
+lower: 98, upper: 99
+53
+J: 49
+lower: 55, upper: 97
+54
+J: 49
+lower: 98, upper: 99
+54
+J: 50
+lower: 79, upper: 97
+55
+J: 50
+lower: 98, upper: 99
+55
+J: 51
+lower: 55, upper: 97
+56
+J: 51
+lower: 98, upper: 99
+56
+J: 52
+lower: 79, upper: 97
+57
+J: 52
+lower: 98, upper: 99
+57
+J: 53
+lower: 55, upper: 97
+58
+J: 53
+lower: 98, upper: 99
+58
+J: 54
+lower: 79, upper: 97
+59
+J: 54
+lower: 98, upper: 99
+59
+J: 55
+lower: 55, upper: 97
+60
+J: 55
+lower: 98, upper: 99
+60
+J: 56
+lower: 79, upper: 97
+61
+J: 56
+lower: 98, upper: 99
+61
+J: 57
+lower: 55, upper: 97
+62
+J: 57
+lower: 98, upper: 99
+62
+J: 58
+lower: 79, upper: 97
+63
+J: 58
+lower: 98, upper: 99
+63
+J: 59
+lower: 55, upper: 97
+64
+J: 59
+lower: 98, upper: 99
+64
+J: 60
+lower: 79, upper: 97
+65
+J: 60
+lower: 98, upper: 99
+65
+J: 61
+lower: 55, upper: 97
+66
+J: 61
+lower: 98, upper: 99
+66
+J: 62
+lower: 79, upper: 97
+67
+J: 62
+lower: 98, upper: 99
+67
+J: 63
+lower: 55, upper: 97
+68
+J: 63
+lower: 98, upper: 99
+68
+J: 64
+lower: 79, upper: 97
+69
+J: 64
+lower: 98, upper: 99
+69
+J: 65
+lower: 55, upper: 97
+70
+J: 65
+lower: 98, upper: 99
+70
+J: 66
+lower: 79, upper: 97
+71
+J: 66
+lower: 98, upper: 99
+71
+J: 67
+lower: 55, upper: 97
+72
+J: 67
+lower: 98, upper: 99
+72
+J: 68
+lower: 79, upper: 97
+73
+J: 68
+lower: 98, upper: 99
+73
+J: 69
+lower: 55, upper: 97
+74
+J: 69
+lower: 98, upper: 99
+74
+J: 70
+lower: 79, upper: 97
+75
+J: 70
+lower: 98, upper: 99
+75
+J: 71
+lower: 55, upper: 97
+76
+J: 71
+lower: 98, upper: 99
+76
+J: 72
+lower: 79, upper: 97
+77
+J: 72
+lower: 98, upper: 99
+77
+J: 73
+lower: 55, upper: 97
+78
+J: 73
+lower: 98, upper: 99
+78
+J: 74
+lower: 79, upper: 97
+79
+J: 74
+lower: 98, upper: 99
+79
+J: 75
+lower: 55, upper: 97
+80
+J: 75
+lower: 98, upper: 99
+80
+J: 76
+lower: 79, upper: 97
+81
+J: 76
+lower: 98, upper: 99
+81
+J: 77
+lower: 55, upper: 97
+82
+J: 77
+lower: 98, upper: 99
+82
+J: 78
+lower: 79, upper: 97
+83
+J: 78
+lower: 98, upper: 99
+83
+J: 79
+lower: 55, upper: 97
+84
+J: 79
+lower: 98, upper: 99
+84
+J: 80
+lower: 79, upper: 97
+85
+J: 80
+lower: 98, upper: 99
+85
+J: 81
+lower: 55, upper: 97
+86
+J: 81
+lower: 98, upper: 99
+86
+J: 82
+lower: 79, upper: 97
+87
+J: 82
+lower: 98, upper: 99
+87
+J: 83
+lower: 55, upper: 97
+88
+J: 83
+lower: 98, upper: 99
+88
+J: 84
+lower: 79, upper: 97
+89
+J: 84
+lower: 98, upper: 99
+89
+J: 85
+lower: 55, upper: 97
+90
+J: 85
+lower: 98, upper: 99
+90
+J: 86
+lower: 79, upper: 97
+91
+J: 86
+lower: 98, upper: 99
+91
+J: 87
+lower: 55, upper: 97
+92
+J: 87
+lower: 98, upper: 99
+92
+J: 88
+lower: 79, upper: 97
+93
+J: 88
+lower: 98, upper: 99
+93
+J: 89
+lower: 55, upper: 97
+94
+J: 89
+lower: 98, upper: 99
+94
+J: 90
+lower: 79, upper: 97
+95
+J: 90
+lower: 98, upper: 99
+95
+J: 91
+lower: 55, upper: 97
+96
+J: 91
+lower: 98, upper: 99
+96
+J: 92
+lower: 79, upper: 97
+97
+J: 92
+lower: 98, upper: 99
+97
+J: 93
+lower: 55, upper: 97
+98
+J: 93
+lower: 98, upper: 99
+98
+J: 94
+lower: 79, upper: 97
+99
+J: 94
+lower: 98, upper: 99
+99
+J: 95
+lower: 55, upper: 97
+100
+J: 95
+lower: 98, upper: 99
+100
+J: 96
+lower: 79, upper: 97
+101
+J: 96
+lower: 98, upper: 99
+101
+J: 97
+lower: 55, upper: 97
+102
+J: 97
+lower: 98, upper: 99
+102
+J: 98
+lower: 79, upper: 97
+103
+J: 98
+lower: 98, upper: 99
+103
+J: 99
+lower: 55, upper: 97
+104
+J: 99
+lower: 98, upper: 99
+104
+J: 100
+lower: 79, upper: 97
+105
+J: 100
+lower: 98, upper: 99
+105
+J: 101
+lower: 55, upper: 97
+106
+J: 101
+lower: 98, upper: 99
+106
+J: 102
+lower: 79, upper: 97
+107
+J: 102
+lower: 98, upper: 99
+107
+J: 103
+lower: 55, upper: 97
+108
+J: 103
+lower: 98, upper: 99
+108
+J: 104
+lower: 79, upper: 97
+109
+J: 104
+lower: 98, upper: 99
+109
+J: 105
+lower: 55, upper: 97
+110
+J: 105
+lower: 98, upper: 99
+110
+J: 106
+lower: 79, upper: 97
+111
+J: 106
+lower: 98, upper: 99
+111
+J: 107
+lower: 55, upper: 97
+112
+J: 107
+lower: 98, upper: 99
+112
+J: 108
+lower: 79, upper: 97
+113
+J: 108
+lower: 98, upper: 99
+113
+J: 109
+lower: 55, upper: 97
+114
+J: 109
+lower: 98, upper: 99
+114
+J: 110
+lower: 79, upper: 97
+115
+J: 110
+lower: 98, upper: 99
+115
+J: 111
+lower: 55, upper: 97
+116
+J: 111
+lower: 98, upper: 99
+116
+J: 112
+lower: 79, upper: 97
+117
+J: 112
+lower: 98, upper: 99
+117
+J: 113
+lower: 55, upper: 97
+118
+J: 113
+lower: 98, upper: 99
+118
+J: 114
+lower: 79, upper: 97
+119
+J: 114
+lower: 98, upper: 99
+119
+J: 115
+lower: 55, upper: 97
+120
+J: 115
+lower: 98, upper: 99
+120
+J: 116
+lower: 79, upper: 97
+121
+J: 116
+lower: 98, upper: 99
+121
+J: 117
+lower: 55, upper: 97
+122
+J: 117
+lower: 98, upper: 99
+122
+J: 118
+lower: 79, upper: 97
+123
+J: 118
+lower: 98, upper: 99
+123
+J: 119
+lower: 55, upper: 97
+124
+J: 119
+lower: 98, upper: 99
+124
+J: 120
+lower: 79, upper: 97
+125
+J: 120
+lower: 98, upper: 99
+125
+J: 121
+lower: 55, upper: 97
+126
+J: 121
+lower: 98, upper: 99
+126
+J: 122
+lower: 79, upper: 97
+127
+J: 122
+lower: 98, upper: 99
+127
+J: 123
+lower: 55, upper: 97
+128
+J: 123
+lower: 98, upper: 99
+128
+J: 124
+lower: 79, upper: 97
+129
+J: 124
+lower: 98, upper: 99
+129
+J: 125
+lower: 55, upper: 97
+130
+J: 125
+lower: 98, upper: 99
+130
+J: 126
+lower: 79, upper: 97
+131
+J: 126
+lower: 98, upper: 99
+131
+J: 127
+lower: 55, upper: 97
+132
+J: 127
+lower: 98, upper: 99
+132
+J: 128
+lower: 79, upper: 97
+133
+J: 128
+lower: 98, upper: 99
+133
+J: 129
+lower: 55, upper: 97
+134
+J: 129
+lower: 98, upper: 99
+134
+J: 130
+lower: 79, upper: 97
+135
+J: 130
+lower: 98, upper: 99
+135
+J: 131
+lower: 55, upper: 97
+136
+J: 131
+lower: 98, upper: 99
+136
+J: 132
+lower: 79, upper: 97
+137
+J: 132
+lower: 98, upper: 99
+137
+J: 133
+lower: 55, upper: 97
+138
+J: 133
+lower: 98, upper: 99
+138
+J: 134
+lower: 79, upper: 97
+139
+J: 134
+lower: 98, upper: 99
+139
+J: 135
+lower: 55, upper: 97
+140
+J: 135
+lower: 98, upper: 99
+140
+J: 136
+lower: 79, upper: 97
+141
+J: 136
+lower: 98, upper: 99
+141
+J: 137
+lower: 55, upper: 97
+142
+J: 137
+lower: 98, upper: 99
+142
+J: 138
+lower: 79, upper: 97
+143
+J: 138
+lower: 98, upper: 99
+143
+J: 139
+lower: 55, upper: 97
+144
+J: 139
+lower: 98, upper: 99
+144
+J: 140
+lower: 79, upper: 97
+145
+J: 140
+lower: 98, upper: 99
+145
+J: 141
+lower: 55, upper: 97
+146
+J: 141
+lower: 98, upper: 99
+146
+J: 142
+lower: 79, upper: 97
+147
+J: 142
+lower: 98, upper: 99
+147
+J: 143
+lower: 55, upper: 97
+148
+J: 143
+lower: 98, upper: 99
+148
+J: 144
+lower: 79, upper: 97
+149
+J: 144
+lower: 98, upper: 99
+149
+J: 145
+lower: 55, upper: 97
+150
+J: 145
+lower: 98, upper: 99
+150
+J: 146
+lower: 79, upper: 97
+151
+J: 146
+lower: 98, upper: 99
+151
+J: 147
+lower: 55, upper: 97
+152
+J: 147
+lower: 98, upper: 99
+152
+J: 148
+lower: 79, upper: 97
+153
+J: 148
+lower: 98, upper: 99
+153
+J: 149
+lower: 55, upper: 97
+154
+J: 149
+lower: 98, upper: 99
+154
+J: 150
+lower: 79, upper: 97
+155
+J: 150
+lower: 98, upper: 99
+155
+J: 151
+lower: 55, upper: 97
+156
+J: 151
+lower: 98, upper: 99
+156
+J: 152
+lower: 79, upper: 97
+157
+J: 152
+lower: 98, upper: 99
+157
+J: 153
+lower: 55, upper: 97
+158
+J: 153
+lower: 98, upper: 99
+158
+J: 154
+lower: 79, upper: 97
+159
+J: 154
+lower: 98, upper: 99
+159
+J: 155
+lower: 55, upper: 97
+160
+J: 155
+lower: 98, upper: 99
+160
+J: 156
+lower: 79, upper: 97
+161
+J: 156
+lower: 98, upper: 99
+161
+J: 157
+lower: 55, upper: 97
+162
+J: 157
+lower: 98, upper: 99
+162
+J: 158
+lower: 79, upper: 97
+163
+J: 158
+lower: 98, upper: 99
+163
+J: 159
+lower: 55, upper: 97
+164
+J: 159
+lower: 98, upper: 99
+164
+J: 160
+lower: 79, upper: 97
+165
+J: 160
+lower: 98, upper: 99
+165
+J: 161
+lower: 55, upper: 97
+166
+J: 161
+lower: 98, upper: 99
+166
+J: 162
+lower: 79, upper: 97
+167
+J: 162
+lower: 98, upper: 99
+167
+J: 163
+lower: 55, upper: 97
+168
+J: 163
+lower: 98, upper: 99
+168
+J: 164
+lower: 79, upper: 97
+169
+J: 164
+lower: 98, upper: 99
+169
+J: 165
+lower: 55, upper: 97
+170
+J: 165
+lower: 98, upper: 99
+170
+J: 166
+lower: 79, upper: 97
+171
+J: 166
+lower: 98, upper: 99
+171
+J: 167
+lower: 55, upper: 97
+172
+J: 167
+lower: 98, upper: 99
+172
+J: 168
+lower: 79, upper: 97
+173
+J: 168
+lower: 98, upper: 99
+173
+J: 169
+lower: 55, upper: 97
+174
+J: 169
+lower: 98, upper: 99
+174
+J: 170
+lower: 79, upper: 97
+175
+J: 170
+lower: 98, upper: 99
+175
+J: 171
+lower: 55, upper: 97
+176
+J: 171
+lower: 98, upper: 99
+176
+J: 172
+lower: 79, upper: 97
+177
+J: 172
+lower: 98, upper: 99
+177
+J: 173
+lower: 55, upper: 97
+178
+J: 173
+lower: 98, upper: 99
+178
+J: 174
+lower: 79, upper: 97
+179
+J: 174
+lower: 98, upper: 99
+179
+J: 175
+lower: 55, upper: 97
+180
+J: 175
+lower: 98, upper: 99
+180
+J: 176
+lower: 79, upper: 97
+181
+J: 176
+lower: 98, upper: 99
+181
+J: 177
+lower: 55, upper: 97
+182
+J: 177
+lower: 98, upper: 99
+182
+J: 178
+lower: 79, upper: 97
+183
+J: 178
+lower: 98, upper: 99
+183
+J: 179
+lower: 55, upper: 97
+184
+J: 179
+lower: 98, upper: 99
+184
+J: 180
+lower: 79, upper: 97
+185
+J: 180
+lower: 98, upper: 99
+185
+J: 181
+lower: 55, upper: 97
+186
+J: 181
+lower: 98, upper: 99
+186
+J: 182
+lower: 79, upper: 97
+187
+J: 182
+lower: 98, upper: 99
+187
+J: 183
+lower: 55, upper: 97
+188
+J: 183
+lower: 98, upper: 99
+188
+J: 184
+lower: 79, upper: 97
+189
+J: 184
+lower: 98, upper: 99
+189
+J: 185
+lower: 55, upper: 97
+190
+J: 185
+lower: 98, upper: 99
+190
+J: 186
+lower: 79, upper: 97
+191
+J: 186
+lower: 98, upper: 99
+191
+J: 187
+lower: 55, upper: 97
+192
+J: 187
+lower: 98, upper: 99
+192
+J: 188
+lower: 79, upper: 97
+193
+J: 188
+lower: 98, upper: 99
+193
+J: 189
+lower: 55, upper: 97
+194
+J: 189
+lower: 98, upper: 99
+194
+J: 190
+lower: 79, upper: 97
+195
+J: 190
+lower: 98, upper: 99
+195
+J: 191
+lower: 55, upper: 97
+196
+J: 191
+lower: 98, upper: 99
+196
+J: 192
+lower: 79, upper: 97
+197
+J: 192
+lower: 98, upper: 99
+197
+J: 193
+lower: 55, upper: 97
+198
+J: 193
+lower: 98, upper: 99
+198
+J: 194
+lower: 79, upper: 97
+199
+J: 194
+lower: 98, upper: 99
+199
+J: 195
+lower: 55, upper: 97
+200
+J: 195
+lower: 98, upper: 99
+200
+J: 196
+lower: 79, upper: 97
+201
+J: 196
+lower: 98, upper: 99
+201
+J: 197
+lower: 55, upper: 97
+202
+J: 197
+lower: 98, upper: 99
+202
+J: 198
+lower: 79, upper: 97
+203
+J: 198
+lower: 98, upper: 99
+203
+J: 199
+lower: 55, upper: 97
+204
+J: 199
+lower: 98, upper: 99
+204
+J: 200
+lower: 79, upper: 97
+205
+J: 200
+lower: 98, upper: 99
+205
+J: 201
+lower: 55, upper: 97
+206
+J: 201
+lower: 98, upper: 99
+206
+J: 202
+lower: 79, upper: 97
+207
+J: 202
+lower: 98, upper: 99
+207
+J: 203
+lower: 55, upper: 97
+208
+J: 203
+lower: 98, upper: 99
+208
+J: 204
+lower: 79, upper: 97
+209
+J: 204
+lower: 98, upper: 99
+209
+J: 205
+lower: 55, upper: 97
+210
+J: 205
+lower: 98, upper: 99
+210
+J: 206
+lower: 79, upper: 97
+211
+J: 206
+lower: 98, upper: 99
+211
+J: 207
+lower: 55, upper: 97
+212
+J: 207
+lower: 98, upper: 99
+212
+J: 208
+lower: 79, upper: 97
+213
+J: 208
+lower: 98, upper: 99
+213
+J: 209
+lower: 55, upper: 97
+214
+J: 209
+lower: 98, upper: 99
+214
+J: 210
+lower: 79, upper: 97
+215
+J: 210
+lower: 98, upper: 99
+215
+J: 211
+lower: 55, upper: 97
+216
+J: 211
+lower: 98, upper: 99
+216
+J: 212
+lower: 79, upper: 97
+217
+J: 212
+lower: 98, upper: 99
+217
+J: 213
+lower: 55, upper: 97
+218
+J: 213
+lower: 98, upper: 99
+218
+J: 214
+lower: 79, upper: 97
+219
+J: 214
+lower: 98, upper: 99
+219
+J: 215
+lower: 55, upper: 97
+220
+J: 215
+lower: 98, upper: 99
+220
+J: 216
+lower: 79, upper: 97
+221
+J: 216
+lower: 98, upper: 99
+221
+J: 217
+lower: 55, upper: 97
+222
+J: 217
+lower: 98, upper: 99
+222
+J: 218
+lower: 79, upper: 97
+223
+J: 218
+lower: 98, upper: 99
+223
+J: 219
+lower: 55, upper: 97
+224
+J: 219
+lower: 98, upper: 99
+224
+J: 220
+lower: 79, upper: 97
+225
+J: 220
+lower: 98, upper: 99
+225
+J: 221
+lower: 55, upper: 97
+226
+J: 221
+lower: 98, upper: 99
+226
+J: 222
+lower: 79, upper: 97
+227
+J: 222
+lower: 98, upper: 99
+227
+J: 223
+lower: 55, upper: 97
+228
+J: 223
