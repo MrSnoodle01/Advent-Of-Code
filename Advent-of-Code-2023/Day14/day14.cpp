@@ -118,7 +118,7 @@ void part2(){
 
     // std::vector<std::vector<std::string>> cycles;
     // int cycleNum = 0;
-    // for(int i = 0; i < 1000000000; i++){
+    // for(int i = 1; i < 1000000000; i++){
     //     input = cycle(input);
     //     bool isIn = false;
     //     for(int j = 0; j < cycles.size(); j++){ 
@@ -128,17 +128,14 @@ void part2(){
     //     if(!isIn)
     //         cycles.push_back(input);
     //     if(isIn){
-    //         cycleNum = 1000000000 - i;
+    //         std::cout << i << std::endl;
+    //         cycleNum = 1000000000 - i - (1000000000 % i);
     //         break;
     //     }
     // }
 
     // for(int i = cycleNum; i <= 1000000000; i++){
     //     input = cycle(input);
-    // }
-
-    // for(int i = 0; i < input.size(); i++){
-    //     std::cout << input[i] << std::endl;
     // }
 
     // sorta just ran it with 1000 and it worked ¯\_(ツ)_/¯
