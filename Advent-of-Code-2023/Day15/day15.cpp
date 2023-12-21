@@ -30,16 +30,20 @@ void part1(){
 void part2(){
     std::vector<std::string> input;
     std::string line;
-    std::fstream myfile("testinput.txt");
+    std::fstream myfile("input.txt");
     while(std::getline(myfile, line, ',')){
         input.push_back(line);
     }
 
+    // vector to keep track of where in each box the id's go
+    std::vector<std::vector<std::string>> indexes; 
     // vector to hold all 256 boxes holding multiple lenses
     std::vector<std::unordered_map<std::string, int>> boxes;
     for(int i = 0; i < 256; i++){
         std::unordered_map<std::string, int> temp;
         boxes.push_back(temp);
+        std::vector<std::string> temp2;
+        indexes.push_back(temp2);
     }
 
     int currValue = 0;      // hold which box to go into
@@ -65,6 +69,26 @@ void part2(){
             currValue = currValue % 256;
         }
 
+        // if op is =:
+        //  if id is already in vector do nothing
+        //  else push it onto vector
+        // if op is -, remove index with that id
+        if(isEq){ 
+            bool doIt = true;
+            for(int j = 0; j < indexes[currValue].size(); j++){
+                if(indexes[currValue][j] == id)
+                    doIt = false;
+            }
+            if(doIt)
+                indexes[currValue].push_back(id);
+        }else{
+            for(int j = 0; j < indexes[currValue].size(); j++){
+                if(indexes[currValue][j] == id){
+                    indexes[currValue].erase(indexes[currValue].begin() + j);
+                }
+            }
+        }
+
         if(isEq) // if op is =, add it to boxes vector
             boxes[currValue][id] = focalLength;
         else    // if op is -, take away from boxes vector
@@ -75,35 +99,16 @@ void part2(){
         id = "";
         focalLength = 0;
         isEq = false;
+        
     }
-
-    for(int i = 0; i < boxes.size(); i++){
-        if(!boxes[i].empty()){
-            std::cout << "box: " << i << " ";
-            for(auto j : boxes[i]){
-                std::cout << "[" << j.first << " " << j.second << "] ";
-            }
-            std::cout << std::endl;
-        }
-    }
-    std::cout << std::endl;
 
     int final = 0;
-    // go thorugh each hashmap in boxes vector
-    for(int i = 0; i < boxes.size(); i++){
-        // make sure that boxes isnt empty
-        if(!boxes[i].empty()){
-            // size keeps track of the slot that should be multiplied
-            int size = boxes[i].size();
-            // iterates through each lense in the box
-            for(auto j : boxes[i]){
-                // adds (box + 1) * slot num * focalLength to final value
-                final += (i + 1) * size * j.second;
-                // std::cout << i + 1 << " " << size << " " << j.second << std::endl;
-                // std::cout << (i + 1) * size * j.second << std::endl;
-                // reduce size cause I have the entries reversed
-                size--;
+    for(int i = 0; i < indexes.size(); i++){
+        for(int j = 0; j < indexes[i].size(); j++){
+            if(!indexes[i][j].empty()){
+                final += (i + 1) * (j + 1) * boxes[i][indexes[i][j]];
             }
+            
         }
     }
 
