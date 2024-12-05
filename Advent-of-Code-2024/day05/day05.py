@@ -1,5 +1,4 @@
 # part 1
-leftRules = {}
 rightRules = {}
 pages = []
 with open('input.txt', 'r') as file:
@@ -10,11 +9,6 @@ with open('input.txt', 'r') as file:
                 right = line.split('|')[1]
                 right = right.replace('\n', '')
 
-                if left in leftRules:
-                    leftRules[left].append(right)
-                else:
-                    leftRules[left] = [right]
-
                 if right in rightRules:
                     rightRules[right].append(left)
                 else:
@@ -22,8 +16,7 @@ with open('input.txt', 'r') as file:
             else:
                 line = line.replace('\n', '')
                 pages.append(line.split(','))
-
-isGood = True
+                
 correctlyOrdered = []
 for page in pages:
     isGood = True
@@ -32,12 +25,6 @@ for page in pages:
         if page[i] in rightRules:
             for j in range(i, len(page)):
                 if page[j] in rightRules[page[i]]:
-                    isGood = False
-                    break
-        # left leftRules
-        if page[i] in leftRules:
-            for j in range(len(pages)-1, -1):
-                if page[j] in leftRules[page[i]]:
                     isGood = False
                     break
     if(isGood):
@@ -50,32 +37,7 @@ for array in correctlyOrdered:
 print("part 1 final: ", final)
 
 # part 2
-leftRules = {}
-rightRules = {}
-pages = []
-with open('input.txt', 'r') as file:
-    for line in file:
-        if(line != "\n"):
-            if(line[2] == '|'):
-                left = line.split('|')[0]
-                right = line.split('|')[1]
-                right = right.replace('\n', '')
-
-                if left in leftRules:
-                    leftRules[left].append(right)
-                else:
-                    leftRules[left] = [right]
-
-                if right in rightRules:
-                    rightRules[right].append(left)
-                else:
-                    rightRules[right] = [left]
-            else:
-                line = line.replace('\n', '')
-                pages.append(line.split(','))
-
-isGood = True
-correctlyOrdered = []
+notCorrectlyOrdered = []
 for page in pages:
     isGood = True
     for i in range(len(page)):
@@ -85,17 +47,27 @@ for page in pages:
                 if page[j] in rightRules[page[i]]:
                     isGood = False
                     break
-        # left leftRules
-        if page[i] in leftRules:
-            for j in range(len(pages)-1, -1):
-                if page[j] in leftRules[page[i]]:
-                    isGood = False
-                    break
-    if(isGood):
-        correctlyOrdered.append(page)
 
+    # if bad, reorder so that it is Good
+    while not isGood:
+        check = 0
+        for i in range(len(page)):
+            isIn = True # so that when swapping indexes, you dont check for key that doesnt exist
+            if page[i] in rightRules:
+                for j in range(i, len(page)):
+                    if isIn and page[j] in rightRules[page[i]]:
+                        temp = page[i]
+                        page[i] = page[j]
+                        page[j] = temp
+                        check += 1
+                        isIn = False
+
+        if check == 0:
+            isGood = True
+            notCorrectlyOrdered.append(page) 
+        
 final = 0
-n = len(correctlyOrdered)
-for array in correctlyOrdered:
+n = len(notCorrectlyOrdered)
+for array in notCorrectlyOrdered:
     final += int(array[int((len(array)-1)/2)])
-print("part 1 final: ", final)
+print("part 2 final: ", final)
