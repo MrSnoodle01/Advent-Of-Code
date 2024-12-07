@@ -86,6 +86,15 @@ while(notDone):
                         if i == obstructionI[len(obstructionI)-3] or j == obstructionJ[len(obstructionJ)-3]:
                             numObstructions += 1
                             print("hit", i-1, j)
+                        elif i in obstructionI:
+                            # get index
+                            index = -1
+                            for k in range(len(obstructionI)):
+                                if obstructionI[k] == i and k % 3 == 0:
+                                    index = k
+                            if index != -1 and obstructionJ[index] > j:
+                                numObstructions += 1
+                                print("hit", i, j)
                 else:
                     notDone = False
             elif(map[i][j] == '>'):
@@ -102,6 +111,15 @@ while(notDone):
                         if i == obstructionI[len(obstructionI)-3] or j == obstructionJ[len(obstructionJ)-3]:
                             numObstructions += 1
                             print("hit", i, j+1)
+                        elif j in obstructionJ:
+                            # get index
+                            index = -1
+                            for k in range(len(obstructionJ)):
+                                if obstructionJ[k] == j and k % 3 == 0:
+                                    index = k
+                            if index != -1 and obstructionI[index] > i:
+                                numObstructions += 1
+                                print("hit", i, j)
                 else:
                     notDone = False
             elif(map[i][j] == 'V'):
@@ -118,6 +136,15 @@ while(notDone):
                         if i == obstructionI[len(obstructionI)-3] or j == obstructionJ[len(obstructionJ)-3]:
                             numObstructions += 1
                             print("hit", i+1, j)
+                        elif i in obstructionI:
+                            # get index
+                            index = -1
+                            for k in range(len(obstructionI)):
+                                if obstructionI[k] == i and k % 3 == 0:
+                                    index = k
+                            if index != -1 and obstructionJ[index] < j:
+                                numObstructions += 1
+                                print("hit", i, j)
                 else:
                     notDone = False
             elif(map[i][j] == "<"):
@@ -134,6 +161,15 @@ while(notDone):
                         if i == obstructionI[len(obstructionI)-3] or j == obstructionJ[len(obstructionJ)-3]:
                             numObstructions += 1
                             print("hit", i, j-1)
+                        elif j in obstructionJ:
+                            # get index
+                            index = -1
+                            for k in range(len(obstructionJ)):
+                                if obstructionJ[k] == j and k % 3 == 0:
+                                    index = k
+                            if index != -1 and obstructionI[index] < i:
+                                numObstructions += 1
+                                print("hit", i, j)
                 else:
                     notDone = False,
 
