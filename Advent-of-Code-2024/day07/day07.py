@@ -1,38 +1,12 @@
+import time
 # part 1
-# total = 0
-# with open('input.txt', 'r') as file:
-#     for line in file:
-#         line = line.split(':')
-#         sum = int(line[0])
-#         nums = (line[1].strip()).split(' ')
-
-#         isGood = False
-#         # basically do binary with addtion being 0 or multiplication being 1
-#         for i in range(pow(2, len(nums)-1)):
-#             binaryNum = format(i, f'0{len(nums)-1}b')
-
-#             final = int(nums[0])
-#             for j in range(len(nums)-1):
-#                 if binaryNum[j] == '0':
-#                     final += int(nums[j+1])
-#                 elif binaryNum[j] == '1':
-#                     final *= int(nums[j+1])
-#             if final == sum:
-#                 isGood = True
-#         if isGood:
-#             total += sum
-
-# print("part 1 final: ", total)
-            
-import copy
-# part 2
+part1Start = time.time()
 total = 0
-with open('testinput.txt', 'r') as file:
+with open('input.txt', 'r') as file:
     for line in file:
         line = line.split(':')
         sum = int(line[0])
         nums = (line[1].strip()).split(' ')
-        print("sum", sum)
 
         isGood = False
         # basically do binary with addtion being 0 or multiplication being 1
@@ -47,84 +21,91 @@ with open('testinput.txt', 'r') as file:
                     final *= int(nums[j+1])
             if final == sum:
                 isGood = True
+                break
+        if isGood:
+            total += sum
 
-        concatenateArr = []
-        for i in range(len(nums)-1):
-            tempNums = copy.deepcopy(nums)
-            tempNums[i] = nums[i] + nums[i+1]
-            tempNums.pop(i+1)
-            concatenateArr.append(tempNums)
-        print("concat", concatenateArr)
+part1End = time.time()
 
-        # using concatenation
-        for arr in concatenateArr:
-            for i in range(pow(2, len(arr)-1)):
-                binaryNum = format(i, f'0{len(arr)-1}b')
+print("part 1 final: ", total)
+print("part 1 time:", part1End-part1Start)
+            
+# part 2
+def convertToTernary(N):
+    # Base case
+    if N == 0:
+        return ""
+    
+    # Finding the remainder when N is divided by 3
+    x = N % 3
+    N //= 3
+    if x < 0:
+        N += 1
 
-                final = int(arr[0])
-                for j in range(len(arr)-1):
-                    if binaryNum[j] == '0':
-                        final += int(arr[j+1])
-                    elif binaryNum[j] == '1':
-                        final *= int(arr[j+1])
-                if final == sum:
-                    isGood = True
+    # Recursive call to compute the rest of the ternary representation
+    result = convertToTernary(N)
 
-        # concatenate after operations
-        for i in range(pow(2, len(arr)-1)):
-            binaryNum = format(i, f'0{len(arr)-1}b')
+    # Return the ternary digit as a string
+    return result + str(x)
 
-            final = int(arr[0])
-            for j in range(len(arr)-1):
+def convert(Decimal, length):
+    
+    # Handle the special case for 0
+    if Decimal == 0:
+        ternary = "0"
+    else:
+        # Compute the ternary representation
+        ternary = convertToTernary(Decimal)
+
+    # Add leading zeros to make the ternary number the specified length
+    if length > 0:
+        ternary = ternary.zfill(length)
+    
+    return ternary
+
+part2Start = time.time()
+total = 0
+with open('input.txt', 'r') as file:
+    for line in file:
+        line = line.split(':')
+        sum = int(line[0])
+        nums = (line[1].strip()).split(' ')
+
+        isGood = False
+        # basically do binary with addtion being 0 or multiplication being 1
+        for i in range(pow(2, len(nums)-1)):
+            binaryNum = format(i, f'0{len(nums)-1}b')
+
+            final = int(nums[0])
+            for j in range(len(nums)-1):
                 if binaryNum[j] == '0':
-                    final += int(arr[j+1])
+                    final += int(nums[j+1])
                 elif binaryNum[j] == '1':
-                    final *= int(arr[j+1])
+                    final *= int(nums[j+1])
             if final == sum:
                 isGood = True
+                break
 
-        # # tempNums = nums
-        # # if pow(2, len(nums)-2)-1 == 0:
-        # #     limit = pow(2, len(nums)-2)
-        # #     limit2 = len(nums)-1
-        # # else:
-        # #     limit = pow(2, len(nums)-2)-1
-        # #     limit2 = len(nums)-2
-        # for i in range(pow(2, len(nums)-1)):
-        #     binaryNum = format(i, f'0{len(nums)-2}b')
-
-        #     # tempNums = copy.deepcopy(nums)
-        #     # print("before", tempNums)
-        #     # print("i", i)
-        #     # tempNums[i] = tempNums[i] + tempNums[i+1]
-        #     # tempNums.pop(i+1)
-        #     # print("after", tempNums)
-        #     final = int(nums[0])
-        #     counter = 0
-        #     for j in range(len(nums)-1):
-        #         # tempNums = copy.deepcopy(nums)
-        #         # print("before", tempNums)
-        #         # # if i == counter:
-        #         # tempNums[i] = str(final) + tempNums[i+1]
-        #         # tempNums.pop(i+1)
-        #         # counter += 1
-        #         # print("after", tempNums)
-        #         # # print("counter", counter)
-        #         # # print("i", i)
-        #         # # print("j", j)
-        #         if binaryNum[j] == '0':
-        #             final += int(nums[j+1])
-        #         elif binaryNum[j] == '1':
-        #             final *= int(nums[j+1])
-        #     if final == sum:
-        #         isGood = True
-        #     # if length of nums is 2 and it don't go into concatenation loop
-        #     # elif int(nums[0] + nums[1]) == sum:
-        #     #     isGood = True
+        # use ternary instead of binary to account for concatenation
+        for i in range(pow(3, len(nums)-1)):
+            ternaryNum = convert(i, len(nums)-1)
+            final = int(nums[0])
+            for j in range(len(nums)-1):
+                if ternaryNum[j] == '0':
+                    final += int(nums[j+1])
+                elif ternaryNum[j] == '1':
+                    final *= int(nums[j+1])
+                elif ternaryNum[j] == '2':
+                    final = int(str(final) + nums[j+1])
+            if final == sum:
+                isGood = True
+                break
 
         if isGood:
             total += sum
-            print("good sum", sum)
+
+part2End = time.time()
 
 print("part 2 final: ", total)
+print("part 2 time:", part2End-part2Start)
             
