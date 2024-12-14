@@ -93,13 +93,6 @@ with open('input.txt', 'r') as file:
 wide = 101
 tall = 103
 
-tempBathroom = []
-for a in range(tall):
-    temp = []
-    for b in range(wide):
-        temp.append(0)
-    tempBathroom.append(temp)
-
 # calculate robot moves
 notTree = True
 count = 0
