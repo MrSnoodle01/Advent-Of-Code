@@ -10,11 +10,11 @@ def isValid(grid, row, col):
 def bfs(grid, start, end):
     directions = [(0,1), (1,0), (0,-1), (-1,0)]
 
-    queue = deque([(start, [])])
+    queue = deque([start])
     visited = set()
 
     while queue:
-        (x,y), path = queue.popleft()
+        (x,y) = queue.popleft()
         if (x,y) == end:
             return True
         if (x,y) in visited or not isValid(grid, x, y):
@@ -23,7 +23,7 @@ def bfs(grid, start, end):
         for dx, dy in directions:
             if isValid(grid, x+dx, y+dy) and grid[x+dx][y+dy] != '.':
                 if int(grid[x+dx][y+dy]) - int(grid[x][y]) == 1:
-                    queue.append(((x + dx, y + dy), path + [(x,y)]))
+                    queue.append((x + dx, y + dy))
         
     return False
 
@@ -55,10 +55,10 @@ from collections import deque
 
 def bfs2(grid, start, end, score):
     directions = [(0,1), (1,0), (0,-1), (-1,0)]
-    queue = deque([(start, [])])
+    queue = deque([start])
 
     while queue:
-        (x,y), path = queue.popleft()
+        (x,y) = queue.popleft()
         if (x,y) == end:
             score += 1
         if not isValid(grid, x, y):
@@ -66,7 +66,7 @@ def bfs2(grid, start, end, score):
         for dx, dy in directions:
             if isValid(grid, x+dx, y+dy) and grid[x+dx][y+dy] != '.':
                 if int(grid[x+dx][y+dy]) - int(grid[x][y]) == 1:
-                    queue.append(((x + dx, y + dy), path + [(x,y)]))
+                    queue.append((x + dx, y + dy))
         
     return score
 
